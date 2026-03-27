@@ -16,7 +16,7 @@ return {
   -- GitHub Copilot (Lua-based client + nvim-cmp integration)
   {
     "zbirenbaum/copilot.lua",
-    event = "InsertEnter",
+    cmd = "Copilot",
     config = function()
       require("configs.copilot").setup()
     end,
