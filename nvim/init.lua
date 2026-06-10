@@ -35,3 +35,8 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+local arrow_keys = { '<Up>', '<Down>', '<Left>', '<Right>' }
+for _, key in ipairs(arrow_keys) do
+  vim.keymap.set('', key, '<Nop>', { noremap = true, silent = true })
+end
